@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-gray-100">
+    <nav class="bg-gray-800 text-white p-4 flex justify-between px-10">
+      <h1 class="font-bold">MyCV</h1>
+      <div class="flex gap-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="cv.html" class="hover:underline">CV</a>
+        <a href="blog.html" class="hover:underline">Blog</a>
+        <a href="kontak.html" class="hover:underline">Kontak</a>
+      </div>
+    </nav>
+
+    <div class="max-w-xl mx-auto mt-10 bg-white p-6 shadow rounded">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Kontak Saya</h2>
+
+      <div class="mb-6 text-gray-700">
+        <p><b>Email:</b> fatmawati@email.com</p>
+        <p><b>No HP:</b> 085754475157</p>
+        <p><b>Instagram:</b> @fatmwty</p>
+      </div>
+
+      <form class="flex flex-col gap-3">
+        <input
+          type="text"
+          placeholder="Nama"
+          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+        />
+
+        <input
+          type="email"
+          list="emailList"
+          placeholder="Email"
+          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+        />
+
+        <datalist id="emailList">
+          <option value="fatmawati@gmail.com"></option>
+          <option value="fatmawati@yahoo.com"></option>
+          <option value="fatmawati@outlook.com"></option>
+        </datalist>
+
+        <textarea
+          placeholder="Pesan"
+          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+        ></textarea>
+
+        <button
+          class="bg-gray-800 text-white p-2 rounded hover:bg-gray-900 transition"
+        >
+          Kirim
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
