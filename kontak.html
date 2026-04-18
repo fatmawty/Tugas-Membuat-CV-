@@ -7,8 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body class="bg-gray-100">
-    <nav class="bg-gray-800 text-white p-4 flex justify-between px-10">
+  <body class="bg-gradient-to-br from-gray-100 to-gray-300 min-h-screen">
+
+    <nav class="bg-gray-800 text-white p-4 flex justify-between px-10 shadow-lg">
       <h1 class="font-bold">MyCV</h1>
       <div class="flex gap-4">
         <a href="index.html" class="hover:underline">Home</a>
@@ -18,46 +19,58 @@
       </div>
     </nav>
 
-    <div class="max-w-xl mx-auto mt-10 bg-white p-6 shadow rounded">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">Kontak Saya</h2>
+    <div class="flex justify-center items-center mt-16">
+      <div class="max-w-xl w-full bg-white p-8 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-[1.02] hover:shadow-3xl">
 
-      <div class="mb-6 text-gray-700">
-        <p><b>Email:</b> fatmawati@email.com</p>
-        <p><b>No HP:</b> 085754475157</p>
-        <p><b>Instagram:</b> @fatmwty</p>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+          Kontak Saya
+        </h2>
+
+        <div class="mb-6 text-gray-700 space-y-1">
+          <p><b>Email:</b> fatmawati@email.com</p>
+          <p><b>No HP:</b> 085754475157</p>
+          <p><b>Instagram:</b> @fatmwty</p>
+        </div>
+
+        <form class="flex flex-col gap-4">
+
+          <input
+            type="text"
+            placeholder="Nama"
+            class="border p-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 transition"
+          />
+
+          <input
+            type="email"
+            list="emailList"
+            placeholder="Email"
+            class="border p-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 transition"
+          />
+
+          <datalist id="emailList">
+            <option value="fatmawati@gmail.com"></option>
+            <option value="fatmawati@yahoo.com"></option>
+            <option value="fatmawati@outlook.com"></option>
+          </datalist>
+
+          <textarea
+            placeholder="Pesan"
+            class="border p-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 transition"
+          ></textarea>
+
+          <button
+            class="bg-gradient-to-r from-gray-700 to-gray-900 text-white p-3 rounded-xl shadow-lg 
+            hover:from-gray-800 hover:to-black hover:shadow-2xl hover:-translate-y-1
+            active:translate-y-0 active:shadow-md
+            transition-all duration-300 ease-in-out"
+          >
+            Kirim
+          </button>
+
+        </form>
+
       </div>
-
-      <form class="flex flex-col gap-3">
-        <input
-          type="text"
-          placeholder="Nama"
-          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
-        />
-
-        <input
-          type="email"
-          list="emailList"
-          placeholder="Email"
-          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
-        />
-
-        <datalist id="emailList">
-          <option value="fatmawati@gmail.com"></option>
-          <option value="fatmawati@yahoo.com"></option>
-          <option value="fatmawati@outlook.com"></option>
-        </datalist>
-
-        <textarea
-          placeholder="Pesan"
-          class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
-        ></textarea>
-
-        <button
-          class="bg-gray-800 text-white p-2 rounded hover:bg-gray-900 transition"
-        >
-          Kirim
-        </button>
-      </form>
     </div>
+
   </body>
 </html>
